@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grades</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+    <!-- 送信 -->
+    <p>手番と勝敗を選択して送信ボタンを押すと戦績表に反映されます。</p>
+    <div>
+        <select class="turn">
+            <option value="0">先手番</option>
+            <option value="1">後手番</option>
+        </select>
+        <select class="result">
+            <option value="1">勝ち</option>
+            <option value="0">負け</option>
+            <option value="2">引き分け</option>
+        </select>
+    
+        <button id="btn">送信</button>
+    </div>
+
+    <!-- 成績表 -->
+    <table id="grades">
+        <caption>戦績表</caption>
+        <thead>
+            <tr>
+                <th></th>
+                <th>勝ち</th>
+                <th>負け</th>
+                <th>引き分け</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+</main>
+    <script src="main.js"></script>
+</body>
+</html>
